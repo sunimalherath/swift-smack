@@ -22,4 +22,8 @@ class ChannelVC: UIViewController {
     @IBAction func loginBtnWasPressed(_ sender: Any) {
         performSegue(withIdentifier: TO_LOGIN, sender: nil)
     }
+    
+    @IBAction func prepareForUnwind(segue: UIStoryboardSegue) {
+        // Using this IBAction to unwind all the way from CreateAccountVC. 
+    }
 }
